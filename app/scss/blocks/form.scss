@@ -1,0 +1,92 @@
+.form {
+
+  &.form-action {
+    width: 800px;
+    margin: 0 auto 30px;
+
+    &:last-child {
+      margin: 0 auto;
+    }
+
+    .form__wrapper {
+      display: flex;
+      height: 50px;
+      margin: 0 -15px;
+    }
+
+    .input__fluid {
+      margin: 0 15px;
+      display: flex;
+      align-items: center;
+      flex: 1 1 auto;
+      box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+
+      .input {
+        height: 100%;
+        flex: 1 1 auto;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+      }
+
+      .select-list {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #494d50;
+        overflow: hidden;
+        position: relative;
+        padding-right: 10px;
+        cursor: pointer;
+
+        &:before {
+          content: '\e917';
+          font-family: 'icomoon';
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          font-size: 8px;
+          color: #fff;
+          transform: translateY(-50%);
+          z-index: 1;
+        }
+
+        .list__item {
+          min-height: 100%;
+        }
+
+        .list__item-link {
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+
+          .icon {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .select {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    .form__button {
+      height: 100%;
+      margin: 0 15px;
+
+      .link {
+        height: 100%;
+        border: none;
+        font-size: 14px;
+      }
+    }
+  }
+}

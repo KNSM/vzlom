@@ -1,0 +1,145 @@
+.section {
+
+  &__title {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .text {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .about-block, .advantages-block, .reviews-block {
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $bpTablet) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: $bpMobile) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $bpPhone) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-block {
+    .section__title {
+      text-align: center;
+      width: 540px;
+      max-width: 100%;
+      margin: 0 auto 40px;
+    }
+  }
+
+  .advantages-block {
+    
+    .section__title {
+      margin-bottom: 40px;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .advantages__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -20px -20px;
+    }
+
+    .advantages__item {
+      width: calc(33.3333% - 40px);
+      margin: 0 20px 20px;
+      text-align: center;
+      
+      .advantages__icon {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .icon {
+          font-size: 60px;
+          color: $primaryColor;
+        }
+      }
+
+      .advantages__title {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .text {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &.section-main {
+    padding: 50px 0 70px;
+    background: url("../img/main-bg-1.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .bg-image {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 300px;
+      height: 460px;
+      background: url('../img/main-bg.png') center center no-repeat;
+      background-size: cover;
+      transform: translateY(-50%) rotate(-30deg);
+    }
+    
+    .section__title {
+      text-align: center;
+      width: 640px;
+      margin: 0 auto 30px;
+      max-width: 100%;
+
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+    
+    .section__caption {
+      text-align: center;
+      margin: 0 auto 50px;
+      width: 650px;
+      max-width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .section__form {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.section-content {
+    padding: 50px 0;
+  }
+}

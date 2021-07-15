@@ -1,0 +1,65 @@
+.link {
+  cursor: pointer;
+
+  &.link-primary {
+    background: $primaryColor;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background: #EF0303;
+    }
+
+    &:active {
+      background: #A20303;
+    }
+  }
+
+  &.link-gray {
+    background: #494d50;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 20px;
+
+    &:hover {
+      background: #60758A;
+    }
+
+    &:active {
+      background: #3A4655;
+    }
+  }
+
+  &.link-blue {
+    background: #2787F5;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 20px;
+
+    &:hover {
+      background: #288DFF;
+    }
+
+    &:active {
+      background: #2471CE;
+    }
+  }
+}

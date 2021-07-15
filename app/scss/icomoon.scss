@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?c34irb');
+  src:  url('../fonts/icomoon/icomoon.eot?c34irb#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?c34irb') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?c34irb') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?c34irb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+
+  &.icon-whatsapp:before {
+    content: "\e903";
+  }
+  &.icon-tiktok:before {
+    content: "\e904";
+  }
+  &.icon-check:before {
+    content: "\e905";
+  }
+  &.icon-facebook:before {
+    content: "\e906";
+  }
+  &.icon-instagram:before {
+    content: "\e908";
+  }
+  &.icon-star:before {
+    content: "\e90d";
+  }
+  &.icon-telegram:before {
+    content: "\e90e";
+  }
+  &.icon-twitter:before {
+    content: "\e910";
+  }
+  &.icon-vk:before {
+    content: "\e912";
+  }
+  &.icon-youtube:before {
+    content: "\e915";
+  }
+  &.icon-arrow-down:before {
+    content: "\e917";
+  }
+  &.icon-heart:before {
+    content: "\e935";
+  }
+  &.icon-arrow-back:before {
+    content: "\e93c";
+  }
+  &.icon-like:before {
+    content: "\e909";
+  }
+  &.icon-code:before {
+    content: "\e900";
+  }
+  &.icon-stats-bars:before {
+    content: "\e902";
+  }
+  &.icon-stats:before {
+    content: "\e902";
+  }
+  &.icon-statistics:before {
+    content: "\e902";
+  }
+  &.icon-chart:before {
+    content: "\e902";
+  }
+  &.icon-search:before {
+    content: "\e901";
+  }
+  &.icon-storage:before {
+    content: "\e907";
+  }
+  &.icon-guard:before {
+    content: "\e90a";
+  }
+  &.icon-rocket:before {
+    content: "\e90b";
+  }
+  &.icon-web:before {
+    content: "\e90c";
+  }
+
+}
