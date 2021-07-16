@@ -27,32 +27,57 @@
 
 .icon {
 
-  &.icon-whatsapp:before {
+
+  &.icon-code:before {
     content: "\e903";
   }
-  &.icon-tiktok:before {
+  &.icon-search:before {
     content: "\e904";
   }
-  &.icon-check:before {
+  &.icon-stats-bars:before {
     content: "\e905";
   }
-  &.icon-facebook:before {
+  &.icon-whatsapp:before {
     content: "\e906";
   }
-  &.icon-instagram:before {
+  &.icon-tiktok:before {
+    content: "\e907";
+  }
+  &.icon-check:before {
     content: "\e908";
   }
-  &.icon-star:before {
+  &.icon-facebook:before {
+    content: "\e909";
+  }
+  &.icon-storage:before {
+    content: "\e90a";
+  }
+  &.icon-instagram:before {
+    content: "\e90b";
+  }
+  &.icon-like:before {
+    content: "\e90c";
+  }
+  &.icon-guard:before {
     content: "\e90d";
   }
-  &.icon-telegram:before {
+  &.icon-rocket:before {
     content: "\e90e";
   }
-  &.icon-twitter:before {
+  &.icon-web:before {
+    content: "\e90f";
+  }
+  &.icon-star:before {
     content: "\e910";
   }
-  &.icon-vk:before {
+  &.icon-telegram:before {
+    content: "\e911";
+  }
+  &.icon-twitter:before {
     content: "\e912";
+  }
+  &.icon-vk:before {
+    content: "\e913";
   }
   &.icon-youtube:before {
     content: "\e915";
@@ -66,38 +91,32 @@
   &.icon-arrow-back:before {
     content: "\e93c";
   }
-  &.icon-like:before {
-    content: "\e909";
+  &.icon-visa:before {
+    content: "\e914";
   }
-  &.icon-code:before {
+  &.icon-mastercard:before {
+    content: "\e916";
+  }
+  &.icon-exchange:before {
+    content: "\e902";
+  }
+  &.icon-mail:before {
+    content: "\e918";
+  }
+  &.icon-lock:before {
     content: "\e900";
   }
-  &.icon-stats-bars:before {
-    content: "\e902";
-  }
-  &.icon-stats:before {
-    content: "\e902";
-  }
-  &.icon-statistics:before {
-    content: "\e902";
-  }
-  &.icon-chart:before {
-    content: "\e902";
-  }
-  &.icon-search:before {
+  &.icon-wallet:before {
     content: "\e901";
   }
-  &.icon-storage:before {
-    content: "\e907";
+  &.icon-phone:before {
+    content: "\e919";
   }
-  &.icon-guard:before {
-    content: "\e90a";
+  &.icon-settings:before {
+    content: "\e91a";
   }
-  &.icon-rocket:before {
-    content: "\e90b";
-  }
-  &.icon-web:before {
-    content: "\e90c";
+  &.icon-dialog:before {
+    content: "\e91b";
   }
 
 }

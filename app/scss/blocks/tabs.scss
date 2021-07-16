@@ -1,8 +1,8 @@
-.tags {
+.tabs {
 
-  &.tags-about {
+  &.tabs-about {
 
-    .tags {
+    .tabs {
 
       &__header {
         margin-bottom: 20px;
@@ -38,12 +38,54 @@
               display: block;
               margin-bottom: 15px;
               transition: .2s;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
             }
 
             .text {
               display: block;
               font-weight: 600;
               transition: .2s;
+            }
+
+            @media (max-width: $bpLaptop) {
+              padding: 17px;
+
+              .icon {
+                font-size: 50px;
+              }
+            }
+
+            @media (max-width: $bpTablet) {
+              padding: 15px;
+
+              .icon {
+                font-size: 40px;
+              }
+            }
+
+            @media (max-width: $bpMobile) {
+              padding: 15px 12px;
+
+              .icon {
+                font-size: 35px;
+              }
+            }
+
+            @media (max-width: 550px) {
+              padding: 10px;
+
+              .icon {
+                font-size: 25px;
+              }
+            }
+
+            @media (max-width: $bpPhone) {
+              .text {
+                display: none;
+              }
             }
           }
         }
@@ -60,6 +102,7 @@
         .item {
           &__wrapper {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin: 0 -20px -20px;
           }
@@ -67,6 +110,30 @@
           &__image, &__content {
             width: calc(50% - 40px);
             margin: 0 20px 20px;
+
+            @media (max-width: $bpMobile) {
+              width: calc(100% - 40px);
+            }
+          }
+
+          &__image {
+            .image {
+              transition: .2s;
+              &:hover {
+                transform: translateY(-10px);
+              }
+            }
+
+            @media (max-width: $bpMobile) {
+              order: 1;
+              text-align: center;
+            }
+          }
+
+          &__content {
+            @media (max-width: $bpMobile) {
+              order: 0;
+            }
           }
 
           &__title {

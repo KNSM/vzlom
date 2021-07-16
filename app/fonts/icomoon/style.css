@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?a9b6c5');
-  src:  url('fonts/icomoon.eot?a9b6c5#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?a9b6c5') format('truetype'),
-    url('fonts/icomoon.woff?a9b6c5') format('woff'),
-    url('fonts/icomoon.svg?a9b6c5#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?oc1nsg');
+  src:  url('fonts/icomoon.eot?oc1nsg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?oc1nsg') format('truetype'),
+    url('fonts/icomoon.woff?oc1nsg') format('woff'),
+    url('fonts/icomoon.svg?oc1nsg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,53 +25,80 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-code:before {
+.icon-lock-closed:before {
   content: "\e900";
 }
-.icon-search:before {
+.icon-wallet:before {
   content: "\e901";
 }
-.icon-stats-bars:before {
+.icon-exchange:before {
   content: "\e902";
 }
-.icon-icon-whatsapp:before {
+.icon-code:before {
   content: "\e903";
 }
-.icon-icon-tiktok:before {
+.icon-search:before {
   content: "\e904";
 }
-.icon-icon-check:before {
+.icon-stats-bars:before {
   content: "\e905";
 }
-.icon-icon-facebook:before {
+.icon-icon-whatsapp:before {
   content: "\e906";
 }
-.icon-storage:before {
+.icon-icon-tiktok:before {
   content: "\e907";
 }
-.icon-icon-instagram:before {
+.icon-icon-check:before {
   content: "\e908";
 }
-.icon-like:before {
+.icon-icon-facebook:before {
   content: "\e909";
 }
-.icon-icon-star:before {
+.icon-storage:before {
+  content: "\e90a";
+}
+.icon-icon-instagram:before {
+  content: "\e90b";
+}
+.icon-like:before {
+  content: "\e90c";
+}
+.icon-guard:before {
   content: "\e90d";
 }
-.icon-icon-telegram:before {
+.icon-rocket:before {
   content: "\e90e";
 }
-.icon-icon-twitter:before {
+.icon-web:before {
+  content: "\e90f";
+}
+.icon-icon-star:before {
   content: "\e910";
 }
-.icon-icon-vk:before {
+.icon-icon-telegram:before {
+  content: "\e911";
+}
+.icon-icon-twitter:before {
   content: "\e912";
+}
+.icon-icon-vk:before {
+  content: "\e913";
+}
+.icon-visa:before {
+  content: "\e914";
 }
 .icon-icon-youtube:before {
   content: "\e915";
 }
+.icon-mastercard:before {
+  content: "\e916";
+}
 .icon-icon-arrow-down:before {
   content: "\e917";
+}
+.icon-envelope:before {
+  content: "\e918";
 }
 .icon-icon-heart:before {
   content: "\e935";
@@ -79,12 +106,12 @@
 .icon-icon-arrow-back:before {
   content: "\e93c";
 }
-.icon-guard:before {
-  content: "\e90a";
+.icon-phone:before {
+  content: "\e919";
 }
-.icon-rocket:before {
-  content: "\e90b";
+.icon-settings:before {
+  content: "\e91a";
 }
-.icon-web:before {
-  content: "\e90c";
+.icon-dialog:before {
+  content: "\e91b";
 }

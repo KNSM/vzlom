@@ -39,6 +39,19 @@
         font-weight: 500;
       }
     }
+
+    @media (max-width: $bpMobile) {
+      justify-content: center;
+      .list__item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: $bpPhone) {
+      .list__item {
+        width: calc(100% - 20px);
+      }
+    }
   }
 
   &.list-dotted {
@@ -46,6 +59,14 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+
+      .text {
+        transition: .2s;
+
+        &:hover {
+          transform: translateX(10px);
+        }
+      }
 
       &:last-child {
         margin-bottom: 0;

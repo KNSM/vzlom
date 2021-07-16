@@ -2,6 +2,7 @@
 
   &.form-action {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto 30px;
 
     &:last-child {
@@ -10,16 +11,21 @@
 
     .form__wrapper {
       display: flex;
-      height: 50px;
-      margin: 0 -15px;
+      margin: 0 -15px -15px;
+
+      @media (max-width: $bpPhone) {
+        flex-wrap: wrap;
+        height: auto;
+      }
     }
 
     .input__fluid {
-      margin: 0 15px;
+      margin: 0 15px 15px;
       display: flex;
       align-items: center;
       flex: 1 1 auto;
       box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+      height: 50px;
 
       .input {
         height: 100%;
@@ -34,23 +40,9 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        background: #494d50;
         overflow: hidden;
         position: relative;
-        padding-right: 10px;
         cursor: pointer;
-
-        &:before {
-          content: '\e917';
-          font-family: 'icomoon';
-          position: absolute;
-          top: 50%;
-          right: 10px;
-          font-size: 8px;
-          color: #fff;
-          transform: translateY(-50%);
-          z-index: 1;
-        }
 
         .list__item {
           min-height: 100%;
@@ -63,9 +55,35 @@
           align-items: center;
           justify-content: center;
           color: #fff;
+          background: #494d50;
 
           .icon {
             font-size: 22px;
+          }
+        }
+
+        &.-active {
+          overflow: visible;
+        }
+      }
+
+      .select-arrow {
+        background: #494d50;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 8px 0 5px;
+        cursor: pointer;
+
+        .icon {
+          font-size: 12px;
+          color: #fff;
+          transition: .2s;
+        }
+
+        &.-active {
+          .icon {
+            transform: rotate(180deg);
           }
         }
       }
@@ -79,13 +97,21 @@
     }
 
     .form__button {
-      height: 100%;
-      margin: 0 15px;
+      height: 50px;
+      margin: 0 15px 15px;
 
       .link {
         height: 100%;
         border: none;
         font-size: 14px;
+      }
+
+      @media (max-width: $bpPhone) {
+        width: 100%;
+
+        .link {
+          width: 100%;
+        }
       }
     }
   }
